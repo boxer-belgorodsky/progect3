@@ -1,0 +1,635 @@
+body, html {
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.wrapper a:hover {
+  text-decoration: none;
+  color: black; }
+
+.wrapper {
+  overflow: hidden;
+  font-family: 'Comfortaa', cursive;
+  min-height: 100%;
+  position: relative; }
+
+.wrapper .active {
+  visibility: visible;
+  left: 0;
+  -webkit-transition: all ease .8s;
+  -o-transition: all ease .8s;
+  transition: all ease .8s; }
+
+#crest .span-crest {
+  background-color: #FFF; }
+
+.active-crest span {
+  background-color: #FFF; }
+  .active-crest span::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: 6px;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
+  .active-crest span::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -6px;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
+
+#crest {
+  z-index: 3000;
+  margin-left: 15px;
+  margin-top: 27px;
+  position: fixed;
+  background-color: #FFF; }
+  #crest span {
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    left: calc(50% - 10px); }
+    #crest span::before {
+      -webkit-transition: all ease .3s;
+      -o-transition: all ease .3s;
+      transition: all ease .3s;
+      content: "";
+      width: 20px;
+      height: 3px;
+      background-color: black;
+      position: absolute;
+      top: -6px;
+      left: calc(50% - 10px); }
+    #crest span::after {
+      -webkit-transition: all ease .3s;
+      -o-transition: all ease .3s;
+      transition: all ease .3s;
+      content: "";
+      width: 20px;
+      height: 3px;
+      background-color: black;
+      position: absolute;
+      top: 6px;
+      left: calc(50% - 10px); }
+
+.header-menu {
+  z-index: 2000;
+  -webkit-transition: all ease .8s;
+  -o-transition: all ease .8s;
+  transition: all ease .8s;
+  visibility: hidden;
+  height: 100px;
+  background-color: rgba(52, 152, 219, 0.7);
+  position: fixed;
+  left: -100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .header-menu:hover {
+    background-color: #3498db; }
+
+.menu {
+  font-weight: bold;
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .menu a {
+    color: black;
+    text-decoration: none;
+    opacity: .5; }
+    .menu a:hover {
+      opacity: 1;
+      border-bottom: 1px solid black; }
+
+.container {
+  z-index: 12;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%; }
+
+section.one {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; }
+  section.one span {
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 10;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 20px;
+    left: calc(49%);
+    display: block;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+  section.one span + span {
+    left: 50%; }
+  section.one span + span + span {
+    left: 51%; }
+  section.one .arrow {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    section.one .arrow button {
+      margin-right: 30px;
+      margin-left: 30px;
+      z-index: 10;
+      font-size: 50px;
+      color: white;
+      width: 25px;
+      height: 25px;
+      display: block;
+      border: 0;
+      background-color: transparent;
+      outline: 0; }
+      section.one .arrow button:hover {
+        cursor: pointer; }
+  section.one .particles-js-canvas-el {
+    z-index: -10;
+    position: absolute;
+    left: -110000px;
+    width: 0;
+    height: 0; }
+  section.one .black {
+    position: absolute;
+    left: -1000000px;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7); }
+  section.one .sliders {
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0; }
+    section.one .sliders:nth-child(3) {
+      background: url(img/white-mountain.jpg) no-repeat;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      left: 100%;
+      top: 0;
+      position: absolute;
+      background-position: 0 -200px;
+      background-attachment: fixed; }
+    section.one .sliders:nth-child(4) {
+      background: url(img/imskay.jpg) no-repeat;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 0 -240px;
+      left: 100%;
+      position: absolute;
+      top: 0;
+      background-attachment: fixed; }
+    section.one .sliders:nth-child(5) {
+      background: url(img/forest-vorsk.jpg) no-repeat;
+      top: 0;
+      left: 100%;
+      position: absolute;
+      background-attachment: fixed; }
+
+.wrapper section.one .active-slide {
+  left: 0;
+  top: 0;
+  background-color: #FFF; }
+
+.active-span {
+  background-color: #FFF; }
+
+.two {
+  min-height: 1200px; }
+
+.article {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 400px; }
+  .article .forests {
+    margin-left: 60px;
+    width: 70%; }
+    .article .forests h1 {
+      text-align: center; }
+
+.article:first-child .forests {
+  visibility: hidden; }
+
+.article:nth-child(3) {
+  position: relative; }
+  .article:nth-child(3) .forests {
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    position: absolute;
+    right: -100px;
+    bottom: -300px;
+    z-index: -10; }
+  .article:nth-child(3) .img {
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    position: absolute;
+    bottom: -300px;
+    z-index: -10; }
+
+.article:nth-child(2) {
+  position: relative; }
+  .article:nth-child(2) .img {
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    position: absolute;
+    right: -2000px; }
+  .article:nth-child(2) .forests {
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    position: absolute;
+    left: -2000px;
+    margin-right: 60px;
+    margin-left: 0; }
+
+.img {
+  width: 30%;
+  height: 200px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+.article:first-child .img {
+  background: url(img/white-mountain-min.jpg);
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  visibility: hidden; }
+
+.article:nth-child(2) .img {
+  background: url(img/imskay-min.jpg);
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.article:nth-child(3) .img {
+  background: url(img/forest-vorsk-min.jpg);
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.wrapper .article .show {
+  visibility: visible; }
+
+.wrapper .article .show-left {
+  left: 0; }
+
+.wrapper .article .show-right {
+  right: -100px; }
+
+.wrapper .article .show-top {
+  bottom: 100px; }
+
+section.three {
+  position: relative;
+  z-index: 30;
+  min-height: 600px;
+  margin-top: 50px;
+  background-color: #95A5A6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  section.three .btn {
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
+    perspective: 700px;
+    margin: 50px auto 50px auto;
+    width: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  section.three .forest-fuc h1 {
+    text-align: center; }
+  section.three .forest-fuc .forest-child {
+    height: 0;
+    visibility: hidden;
+    position: relative; }
+    section.three .forest-fuc .forest-child .close {
+      position: absolute;
+      right: 0;
+      top: 0; }
+      section.three .forest-fuc .forest-child .close span {
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        left: calc(50% - 9.1px); }
+        section.three .forest-fuc .forest-child .close span::after {
+          content: "";
+          width: 20px;
+          height: 3px;
+          background-color: black;
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+          display: block; }
+
+.wrapper .three .forest-fuc .display-show {
+  visibility: visible;
+  height: 100%; }
+
+.sliders {
+  z-index: 3; }
+  .sliders .container {
+    z-index: 100; }
+    .sliders .container h1 {
+      width: 900px;
+      color: blue;
+      text-align: center;
+      font-size: 50px;
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+      z-index: 100; }
+
+footer {
+  z-index: 500;
+  height: 300px;
+  background-color: #231F1F;
+  width: 100%;
+  margin-top: 30px; }
+  footer .footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  footer .who {
+    text-align: center;
+    color: white;
+    width: 400px;
+    height: 100px;
+    font-size: 12px; }
+    footer .who a {
+      color: white;
+      text-decoration: none; }
+      footer .who a:hover {
+        border-bottom: 1px solid white;
+        color: white; }
+  footer .about {
+    width: 600px;
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    footer .about .search {
+      color: white; }
+      footer .about .search a {
+        color: white;
+        text-decoration: none; }
+        footer .about .search a:hover {
+          border-bottom: 1px solid white; }
+
+.slide-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .slide-cont h1 {
+    margin: 0 auto;
+    height: 200px;
+    line-height: 200px;
+    width: 600px; }
+
+.mountain-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .mountain-child .mountain {
+    z-index: 200;
+    width: 100%;
+    height: 200px;
+    background: url(img/forest-mountain-child.jpg) no-repeat;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0 -50px; }
+
+.imskay-child {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .imskay-child .imskay {
+    width: 100%;
+    height: 200px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: url(img/imskay-child.jpg) no-repeat;
+    background-position: 0 -30px; }
+
+.surki {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .surki .surki-child-two {
+    width: 150%;
+    height: 200px;
+    background: url(img/bird.jpg);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 50px; }
+
+.look {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .look .look-child {
+    width: 300%;
+    height: 170px;
+    background: url(img/forest-vorsk-child.jpg) no-repeat;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 30px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+.barsuk {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .barsuk-child {
+    width: 300%;
+    height: 200px;
+    background: url(img/barsuk.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 20px; }
+
+.footer-slide {
+  position: absolute;
+  height: 490px;
+  right: 0;
+  left: 0;
+  background-position: 0 -300px; }
+
+.look-slide {
+  text-align: center;
+  width: 200px;
+  left: -1000px;
+  top: 10%;
+  position: absolute;
+  z-index: 700; }
+
+.look-slide-two {
+  width: 200px;
+  background: #000;
+  right: -1000px;
+  top: 37%;
+  position: absolute;
+  z-index: 700;
+  color: white;
+  text-align: center; }
+  .look-slide-two::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 90px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 800;
+    position: absolute;
+    right: 10%;
+    background: #000; }
